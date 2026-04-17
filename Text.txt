@@ -1,9 +1,0 @@
-ポートフォリオとして制作したLPのURLを共有させていただきます。
-
-■公開ページ
-https://rnum-1995.github.io/portfolio_lp-beauty-product/
-
-■GitHub（ソースコード）
-https://github.com/rnum-1995/portfolio_lp-beauty-product
-
-ご確認のほどよろしくお願いいたします。
