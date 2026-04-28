@@ -70,7 +70,6 @@ h3,
 .mv-btn,
 .plan-card-standard-btn,
 .plan-card-best-btn,
-.cta-btn,
 .nf-btn {
     display: inline-block;
 }
@@ -162,8 +161,13 @@ header {
     font-weight: medium;
     background: linear-gradient(135deg, #745A27, #E4C285);
     border-radius: 4px;
-    width: 25%;
+    width: clamp(8.125rem, 4.384rem + 15.962vw, 18.75rem);
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 
     &:hover {
         opacity: 0.8;
@@ -421,6 +425,13 @@ article {
     text-align: center;
 }
 
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .cta-title {
     font-size: clamp(2.5rem, 1.982rem + 2.21vw, 3.75rem);
     font-family: var(--title);
@@ -433,9 +444,15 @@ article {
     color: var(--white);
     text-align: center;
     font-weight: medium;
-    padding: clamp(0.75rem, 0.439rem + 1.326vw, 1.5rem) clamp(2.5rem, 1.878rem + 2.652vw, 4rem);
+    padding: clamp(0.5rem, 0.189rem + 1.326vw, 1.25rem) clamp(1rem, 0.171rem + 3.536vw, 3rem);
     border-radius: 4px;
     margin-bottom: clamp(5rem, 4.586rem + 1.768vw, 6rem);
+    width: clamp(8.125rem, 4.384rem + 15.962vw, 18.75rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 
     &:hover {
         opacity: 0.6;
@@ -549,12 +566,6 @@ small {
 /* -- レスポンシブ -- */
 @media screen and (min-width: 768px) {
 
-    /* -- mv -- */
-    .mv-btn {
-        max-width: 300px;
-    }
-
-
     /* -- Product Appeal -- */
     .appeal-container {
         flex-direction: row;
@@ -610,6 +621,10 @@ small {
     }
 
     /* -- Final CTA -- */
+    .cta-btn {
+        max-width: 300px;
+    }
+
     .cta-list {
         flex-direction: row;
         justify-content: center;
