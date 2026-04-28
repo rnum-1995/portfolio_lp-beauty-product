@@ -87,6 +87,7 @@ h3,
 header {
     font-family: var(--font-title);
     padding: clamp(0.5rem, 0.324rem + 0.751vw, 1rem) 0;
+    background-color: var(--white);
 }
 
 /* ロゴ */
@@ -407,8 +408,8 @@ article {
 
 /* FAQ */
 .faq {
-    margin: clamp(3.75rem, 2.430rem + 5.634vw, 7.5rem) auto;
-    background: var(--white);
+    padding: clamp(3.75rem, 2.430rem + 5.634vw, 7.5rem);
+    background-color: var(--white);
 }
 
 .faq::after {
@@ -628,9 +629,6 @@ small {
     }
 
     /* -- FAQ -- */
-    .faq {
-        max-width: 60%;
-    }
 
     /* -- Final CTA -- */
     .cta-btn {
@@ -644,6 +642,10 @@ small {
     }
 
     /* -- footer -- */
+    footer {
+        background-color: var(--white);
+    }
+
     .footer-container {
         flex-direction: row;
         justify-content: space-between;
